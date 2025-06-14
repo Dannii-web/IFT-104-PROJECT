@@ -16,7 +16,7 @@ if submit and operations == "withdraw":
             Current.withdraw(amount)
             st.write(f"your balance is {Current.balance}")
 
-        if amount > Current.balance:
+        elif amount > Current.balance:
             st.write("Insufficient Balance")
             
         else:
